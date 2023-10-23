@@ -4,17 +4,50 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 import { useTheme } from "next-themes";
-import { BeakerIcon } from "@heroicons/react/20/solid";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 export default function Header({}: Props) {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  console.log(theme);
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // console.log(mounted)
+  /**
+   * here, on the server side, mounted=false, which means the code will break and the server won't return the component below
+   * however, on the client side, mounted=true, which means the client will carry on to render the component below
+   */
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
-    <header className="sticky top-0 flex justify-between max-w-5xl mx-auto">
+    <header className="sticky top-0 p-5 flex justify-between max-w-5xl mx-auto z-20 xl:items-center">
       {/* LEFT SIDE OF HEADER */}
-      <div className="flex flex-row items-center">
+      <motion.div
+        initial={{
+          x: -500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0, // means animate back to the default location
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5, // in seconds
+        }}
+        className="flex flex-row items-center"
+      >
         {/* SOCIAL ICONS */}
         <SocialIcon
           url="https://www.facebook.com/jiayiiii.03"
@@ -31,14 +64,32 @@ export default function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
         />
-      </div>
+      </motion.div>
 
-      <div className="flex flex-row items-center">
-        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="w-7">
+      <motion.div
+        initial={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        className="flex flex-row items-center"
+      >
+        <button
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          className="w-10 h-full hover:bg-slate-100 rounded-lg dark:hover:bg-slate-800"
+        >
           {theme === "dark" ? (
-            <SunIcon className="text-orange-300 h-6 w-6" />
+            <SunIcon className="text-orange-200 h-6 w-6 mx-auto" />
           ) : (
-            <MoonIcon className="text-orange-300 h-6 w-6" />
+            <MoonIcon className="text-blue-950 h-6 w-6 mx-auto" />
           )}
         </button>
         {/* RIGHT SIDE OF HEADER */}
@@ -56,7 +107,7 @@ export default function Header({}: Props) {
             Contact me
           </p>
         </div>
-      </div>
+      </motion.div>
     </header>
   );
 }
