@@ -27,11 +27,11 @@ function Hero({}: Props) {
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase mb-3 text-gray-500 text-opacity-80 tracking-[10px] ml-2 ">
+        <h2 className="text-sm uppercase mb-3 text-gray-500 text-opacity-80 tracking-[10px] ml-2 dark:text-slate-300/60">
           Computer Science Student
         </h2>
         <h1 className="text-lg lg:text-xl">
-          <span className="font-victor tracking-wide bg-gray-50 bg-opacity-50 p-2 text-[#031E45] font-medium">
+          <span className="font-victor tracking-wide bg-gray-50 bg-opacity-50 p-2 text-[#031E45] font-medium dark:bg-[#030F2B] dark:text-white">
             {text}
           </span>
           <Cursor cursorColor="#030636" />
