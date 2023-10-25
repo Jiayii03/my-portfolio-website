@@ -26,6 +26,34 @@ return null
 }
 ```
 
+## Framer motion
+
+Encapsulate children in 
+
+```html
+<motion.div
+initial = {}
+animate = {}
+transition = {}
+>
+    {/* children here */ }
+<motion.div />
+```
+
+## Tailwind animation
+
+Utilities for animating elements with CSS animations. Some cool implementations to consider:
+
+1. `animate-spin`
+2. `animate-ping`
+3. `animate-pulse`
+4. `animate-bounce`
+
+## Tailwind scroll snap
+
+By specifying `snap-x` or `snap-y` to anable horizontal or vertical scroll snapping within an element.
+For scroll snapping to work, *scroll snap alignment* on the children has to be set, i.e. `scroll-center`
+
 
 ## Reference Websites
 
