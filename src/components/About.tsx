@@ -38,16 +38,16 @@ function About({}: Props) {
           <span className="underline decoration-[#001D5E]/50">Who</span> Am I?{" "}
         </h4>
         <p className="text-xs flex-grow-0 max-w-[75%] max-h-[50%] mx-auto md:max-w-full md:text-sm">
-          I'm a second-year computer science (Artificial Intelligence) student
+          I&lsquo;m a second-year computer science (Artificial Intelligence) student
           with strong enthusiasm in both academics and extra-curricular
           activities, currently enrolling at the University of Nottingham,
           United Kingdom, fully sponsored by the Government of Malaysia. I have
           a strong grasp in Python, Next.js/React.js, Node.js, Java, C and SQL.
-          I believe in independent self-learning and good time management. I've
+          I believe in independent self-learning and good time management. I&lsquo;ve
           been working hard to strengthen my skills in the area of machine
           learning, generative AI, full stack web/mobile app development, API
-          and database integration. I'm hoping to gain more hands-on experience
-          in the computing field and so I'm open to all job/internship
+          and database integration. I&lsquo;m hoping to gain more hands-on experience
+          in the computing field and so I&lsquo;m open to all job/internship
           opportunities in this related industry. I aspire to be a multi-faceted
           developer and bring positive impacts to the society.
         </p>
