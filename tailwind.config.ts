@@ -16,7 +16,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        "victor": ['Victor Mono', 'monospace']
+        "victor": ['Victor Mono', 'monospace'],
+        "poppins": ["Poppins", "sans-serif"]
       }
     },
   },

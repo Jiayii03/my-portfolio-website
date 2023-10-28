@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
@@ -83,7 +81,9 @@ export default function Header({}: Props) {
         className="flex flex-row items-center"
       >
         <button
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          onClick={() => {
+            setTheme(theme === "dark" ? "light" : "dark");
+          }}
           className="w-10 h-full hover:bg-slate-100 rounded-lg dark:hover:bg-slate-800"
         >
           {theme === "dark" ? (
