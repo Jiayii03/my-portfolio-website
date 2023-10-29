@@ -21,7 +21,7 @@ function About({}: Props) {
         transition={{
           duration: 1.2,
         }}
-        className="mt-32 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover mr-5 md:rounded-lg min-h-[670px]: md:h-72 md:w-60 md:mt-12 shadow-2xl"
+        className="mt-36 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover mr-5 md:rounded-lg min-h-[670px]: md:h-72 md:w-60 md:mt-12 shadow-2xl"
       />
 
       <motion.div
@@ -35,22 +35,27 @@ function About({}: Props) {
         className="space-y-10 px-0 md:px-10 md:mt-12 w-screen mr-5 md:max-h-[60%]"
       >
         <h4 className="text-2xl mt-6  md:text-4xl font-medium font-poppins text-slate-800 md:my-0 dark:text-slate-400">
-          <span className="underline decoration-[#001D5E]/50 dark:decoration-[#D0DFFF] ">Who</span> Am I?{" "}
+          <span className="underline decoration-[#001D5E]/50 dark:decoration-[#D0DFFF] ">
+            Who
+          </span>{" "}
+          Am I?{" "}
         </h4>
-        <p className="text-xs flex-grow-0 max-w-[75%]  mx-auto md:max-w-full md:text-sm">
-          I&lsquo;m a second-year computer science (Artificial Intelligence) student
-          with strong enthusiasm in both academics and extra-curricular
-          activities, currently enrolling at the University of Nottingham,
-          United Kingdom, fully sponsored by the Government of Malaysia. I have
-          a strong grasp in Python, Next.js/React.js, Node.js, Java, C and SQL.
-          I believe in independent self-learning and good time management. I&lsquo;ve
-          been working hard to strengthen my skills in the area of machine
-          learning, generative AI, full stack web/mobile app development, API
-          and database integration. I&lsquo;m hoping to gain more hands-on experience
-          in the computing field and so I&lsquo;m open to all job/internship
-          opportunities in this related industry. I aspire to be a multi-faceted
-          developer and bring positive impacts to the society.
-        </p>
+        <div className="!mt-5">
+          <p className="text-xs flex-grow-0 m-0 max-w-[75%]  mx-auto md:max-w-full md:text-sm">
+            I&lsquo;m a second-year computer science (Artificial Intelligence)
+            student with strong enthusiasm in both academics and
+            extra-curricular activities, currently enrolling at the University
+            of Nottingham, United Kingdom, fully sponsored by the Government of
+            Malaysia. I have a strong grasp in Python, Next.js/React.js,
+            Node.js, Java, C and SQL. I believe in independent self-learning and
+            good time management. I&lsquo;ve been working hard to strengthen my
+            skills in the area of machine learning, generative AI, full stack
+            web/mobile app development, API and database integration. I&lsquo;m
+            hoping to gain more hands-on experience in the computing field and
+            so I&lsquo;m open to all job/internship opportunities in this
+            related industry.
+          </p>
+        </div>
       </motion.div>
     </div>
   );
