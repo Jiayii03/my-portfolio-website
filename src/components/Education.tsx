@@ -5,14 +5,52 @@ type Props = {};
 
 function Education({}: Props) {
   return (
-  <div className="h-screen flex relative overflow-hidden flex-col md:flex-row max-w-full justify-evenly mx-auto items-center">
-    <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-1xl">Education</h3>
+    <div className="h-screen flex relative overflow-hidden flex-col md:flex-row max-w-full justify-evenly mx-auto items-center">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-1xl">
+        Education
+      </h3>
 
-    <div className="w-full px-10 pt-24 md:pt-28 xl:pt-16 flex space-x-8 overflow-x-scroll snap-x snap-mandatory">
-        <EducationCard />
-        <EducationCard />
+      <div className="w-full px-10 pt-24 md:pt-28 xl:pt-16 flex space-x-8 overflow-x-scroll snap-x snap-mandatory">
+        <EducationCard
+          imageLink="https://cdn.discordapp.com/attachments/1165641776011427900/1168210526233444362/UniversityofNottinghamUoN-logo.png?ex=6550efd5&is=653e7ad5&hm=50b9c8fe518f494c806c2e9eba507b84d736cb5906c83fd5045a5d324daac773&"
+          headerName="BSc (Hons) Computer Science in AI"
+          placeName="University of Nottingham, United Kingdom"
+          skills={{
+            "python": "https://cdn.discordapp.com/attachments/1165641776011427900/1168214519902900285/1200px-Python-logo-notext.png?ex=6550f38d&is=653e7e8d&hm=135b8d95195fc13b80e4777de8b4a93176fd2b04f9c9ae8ffedd982703abe8ed&",
+            "java": "https://cdn.discordapp.com/attachments/1165641776011427900/1168214365808373860/png-clipart-java-programming-computer-programming-programming-language-android-coffee-jar-text-logo.png?ex=6550f369&is=653e7e69&hm=5b7d5b233342a10be655f659890b3177bec26d95196aa7e5757017cce5cfae84&",
+            "c": "https://cdn.discordapp.com/attachments/1165641776011427900/1168214008965386260/1853px-C_Programming_Language.png?ex=6550f314&is=653e7e14&hm=6cc3fac019e3cf7eb7b68d3bbaf9d4c4b50da140cf06afe462be121780acff26&",
+            "haskell": "https://cdn.discordapp.com/attachments/1165641776011427900/1168214971319070831/63064c5652d40eda2eb7a838_33ac2334.png?ex=6550f3f9&is=653e7ef9&hm=bf1f870d2105d5ab4bbafdb47b8dee0d626727c421054e84b60886ed59042b21&",
+            "git": "https://cdn.discordapp.com/attachments/1165641776011427900/1168215612644925601/Git-Icon-1788C.png?ex=6550f492&is=653e7f92&hm=2c82217ced09d8acc79df9e983acaea4af90aeac548afacca4fa257b31b89d2e&",
+
+          }}
+          date="2022 - 2025"
+          notes={["Note1", "Note2", "Note3"]}
+        />
+        <EducationCard
+          imageLink="https://cdn.discordapp.com/attachments/1165641776011427900/1168301539505475735/taylor-s-university-college-squarelogo-1428399291142-removebg-preview.png?ex=65514499&is=653ecf99&hm=f72bdc063e5529ebafd020c88c747b406abb8f3ba2c499fe866a55e620498fce&"
+          headerName="Foundation in Computing"
+          placeName="Taylor's University, Malaysia"
+          skills={{
+            "html": "https://cdn.discordapp.com/attachments/1165641776011427900/1168299353765589103/HTML5_Badge_512.png?ex=6551428f&is=653ecd8f&hm=d4854784919705550c5cbeac3f24fd8639f5b4932f3d013f5da59d2e2b7d378c&",
+            "css": "https://cdn.discordapp.com/attachments/1165641776011427900/1168299713917890632/css-512.png?ex=655142e5&is=653ecde5&hm=46da5d234636ffec7ff83ce68b6ea490f79d45b1461947a01c0a240018152480&",
+            "javascript": "https://cdn.discordapp.com/attachments/1165641776011427900/1168300837492228126/javascript-1.png?ex=655143f1&is=653ecef1&hm=7e70c1d17c892bbc86bfbb24d82f11506880cd2c6b5d6d2c559193eac29eb958&",
+            "sql": "https://cdn.discordapp.com/attachments/1165641776011427900/1168299883770425354/62debc4fff3c6e4b8b5de8d3.png?ex=6551430e&is=653ece0e&hm=2d7ec256904eb703fec538ccc7953203ee6415ad533fb02957b63045055c8690&",
+          }}
+          date="2021 - 2022"
+          notes={["Note1", "Note2", "Note3"]}
+        />
+        <EducationCard
+          imageLink="https://cdn.discordapp.com/attachments/1165641776011427900/1168301424359256145/JIT_SIN_NEW_LOGO-removebg-preview.png?ex=6551447d&is=653ecf7d&hm=5e489c235d09a8a9067ed2fc4ed8acaf4a1564b38f578613a5be32c4ccdfb510&"
+          headerName="Sijil Pelajaran Malaysia (SPM)"
+          placeName="Penang, Malaysia"
+          skills={{
+            "chemistry": "https://cdn.discordapp.com/attachments/1165641776011427900/1168303867163852871/kisspng-beaker-laboratory-flask-clip-art-science-png-image-5a752ec49962a1.png?ex=655146c3&is=653ed1c3&hm=c3c2199097bb35fceb4aef5aae381a79a5b44eb09cc5aeb3276f35182ffb355e&"
+          }}
+          date="2016 - 2020"
+          notes={["Note1", "Note2", "Note3"]}
+        />
+      </div>
     </div>
-  </div>
   );
 }
 
