@@ -20,6 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>{children}</Providers>
         {/* {children} */}
+        {/* Test commit */}
       </body>
     </html>
   );
