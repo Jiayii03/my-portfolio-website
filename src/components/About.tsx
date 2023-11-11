@@ -21,7 +21,7 @@ function About({}: Props) {
         transition={{
           duration: 1.2,
         }}
-        className="mt-36 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover mr-5 md:rounded-lg min-h-[670px]: md:h-72 md:w-60 md:mt-12 shadow-2xl"
+        className="mt-36 md:mb-0 flex-shrink-0 w-32 h-32 rounded-full object-cover mr-5 md:rounded-lg min-h-[670px]: md:h-48 md:w-40 xl:h-64 xl:w-56 md:mt-12 shadow-2xl"
       />
 
       <motion.div
@@ -34,7 +34,7 @@ function About({}: Props) {
         }}
         className="space-y-10 px-0 md:px-10 md:mt-12 w-screen mr-5 md:max-h-[60%]"
       >
-        <h4 className="text-2xl mt-6  md:text-4xl font-medium font-poppins text-slate-800 md:my-0 dark:text-slate-400">
+        <h4 className="text-lg mt-6  md:text-3xl font-medium font-poppins text-slate-800 md:my-0 dark:text-slate-400">
           <span className="underline decoration-[#001D5E]/50 dark:decoration-[#D0DFFF] ">
             Who
           </span>{" "}

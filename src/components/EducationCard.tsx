@@ -24,7 +24,7 @@ function EducationCard({
   notes,
 }: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 py-4 w-[360px] md:w-[500px] xl:w-[600px] snap-center bg-slate-300/30 opacity-60 hover:opacity-100 transition-all ease-in-out duration-200 cursor-pointer">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 lg:py-7 w-[360px] lg:w-[470px] snap-center bg-[#F1E5EF]/40 hover:bg-[#F1E5EF]/60 transition-all ease-in-out duration-200 cursor-pointer dark:bg-slate-800 dark:hover:bg-slate-700">
       {/* two elements in here */}
       <motion.img
         initial={{
@@ -38,32 +38,27 @@ function EducationCard({
           opacity: 1,
           y: 0,
         }}
-        className="w-24 h-24 rounded-full xl:w-[100px] xl:h-[100px] object-cover"
+        className="w-16 h-16 mt-3 rounded-full lg:w-16 lg:h-16 lg:mt-0 object-cover"
         src={imageLink}
         alt="uonLogo"
       />
 
       <div className="px-0 md:px-7 pl-[10%]">
         <h4 className="text-1xl font-light">{headerName}</h4>
-        <p className="font-bold text-lg mt-1">{placeName}</p>
+        <p className="font-bold text-md mt-1">{placeName}</p>
         <div className="flex space-x-2 my-2">
-          {/* <img
-            src="https://cdn.discordapp.com/attachments/1165641776011427900/1168214519902900285/1200px-Python-logo-notext.png?ex=6550f38d&is=653e7e8d&hm=135b8d95195fc13b80e4777de8b4a93176fd2b04f9c9ae8ffedd982703abe8ed&"
-            alt="pythonLogo"
-            className="h-8 w-8 rounded-full"
-          /> */}
           {Object.entries(skills).map(([skill, imgUrl]) => (
             <img
-                key={skill}
+              key={skill}
               src={imgUrl as string}
               alt={skill}
-              className="h-8 w-8 rounded-full"
+              className="h-6 w-6 rounded-full object-cover"
             />
           ))}
         </div>
         <p className="text-slate-500 mt-3 text-sm">{date}</p>
 
-        <ul className="list-disc space-y-4 ml-3 mt-2 text-sm">
+        <ul className="list-disc space-y-4 ml-3 mt-2 text-xs">
           {notes.map((note, index) => (
             <li key={index}>{note}</li>
           ))}

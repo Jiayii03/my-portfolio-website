@@ -74,3 +74,4 @@ For scroll snapping to work, *scroll snap alignment* on the children has to be s
 - npm i @heroicons/react
 - npm install framer-motion
 - npm i react-simple-typewriter
+
