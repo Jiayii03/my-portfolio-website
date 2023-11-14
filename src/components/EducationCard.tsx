@@ -24,7 +24,7 @@ function EducationCard({
   notes,
 }: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 lg:py-7 w-[360px] lg:w-[470px] snap-center bg-[#F1E5EF]/40 hover:bg-[#F1E5EF]/60 transition-all ease-in-out duration-200 cursor-pointer dark:bg-slate-800 dark:hover:bg-slate-700">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[420px] lg:py-7  lg:w-[470px] snap-center bg-[#F1E5EF]/40 hover:bg-[#F1E5EF]/60 transition-all ease-in-out duration-200 cursor-pointer dark:bg-slate-800 dark:hover:bg-slate-700">
       {/* two elements in here */}
       <motion.img
         initial={{
