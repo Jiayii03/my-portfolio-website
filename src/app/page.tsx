@@ -1,6 +1,7 @@
 "use client"
 
 import About from "@/components/About";
+import Awards from "@/components/Awards";
 import Education from "@/components/Education";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -33,9 +34,14 @@ export default function Home() {
         <About />
       </section>
 
-      {/* Experience */}
+      {/* Education */}
       <section id="education" className="snap-start">
         <Education />
+      </section>
+
+      {/* Awards */}
+      <section id="awards" className="snap-start">
+        <Awards />
       </section>
 
       {/* Skills */}

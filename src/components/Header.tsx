@@ -53,12 +53,17 @@ export default function Header({}: Props) {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.facebook.com/jiayiiii.03"
+          url="https://www.instagram.com/j.yi_03/?hl=en"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://www.facebook.com/jiayiiii.03"
+          url="https://www.linkedin.com/in/jia-yi-chau-4a12a621a/"
+          fgColor="gray"
+          bgColor="transparent"
+        />
+        <SocialIcon
+          url="https://github.com/Jiayii03"
           fgColor="gray"
           bgColor="transparent"
         />
