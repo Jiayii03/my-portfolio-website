@@ -44,11 +44,11 @@ function Hero({}: Props) {
           <Link href="#education">
             <button className="heroButton">Education</button>
           </Link>
-          <Link href="#awards">
-            <button className="heroButton">Awards</button>
-          </Link>
           <Link href="#skills">
             <button className="heroButton">Skills</button>
+          </Link>
+          <Link href="#awards">
+            <button className="heroButton">Awards</button>
           </Link>
           <Link href="#projects">
             <button className="heroButton">Projects</button>

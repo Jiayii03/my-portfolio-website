@@ -44,28 +44,32 @@ export default function Header({}: Props) {
         transition={{
           duration: 1.5, // in seconds
         }}
-        className="flex flex-row items-center"
+        className="flex flex-row items-center "
       >
         {/* SOCIAL ICONS */}
         <SocialIcon
           url="https://www.facebook.com/jiayiiii.03"
           fgColor="gray"
           bgColor="transparent"
+          className="hover:bg-slate-100 rounded-lg dark:hover:bg-slate-800"
         />
         <SocialIcon
           url="https://www.instagram.com/j.yi_03/?hl=en"
           fgColor="gray"
           bgColor="transparent"
+          className="hover:bg-slate-100 rounded-lg dark:hover:bg-slate-800"
         />
         <SocialIcon
           url="https://www.linkedin.com/in/jia-yi-chau-4a12a621a/"
           fgColor="gray"
           bgColor="transparent"
+          className="hover:bg-slate-100 rounded-lg dark:hover:bg-slate-800"
         />
         <SocialIcon
           url="https://github.com/Jiayii03"
           fgColor="gray"
           bgColor="transparent"
+          className="hover:bg-slate-100 rounded-lg dark:hover:bg-slate-800"
         />
       </motion.div>
 

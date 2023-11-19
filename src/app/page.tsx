@@ -5,6 +5,7 @@ import Awards from "@/components/Awards";
 import Education from "@/components/Education";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
 import Image from "next/image";
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
@@ -40,8 +41,8 @@ export default function Home() {
       </section>
 
       {/* Awards */}
-      <section id="awards" className="snap-start">
-        <Awards />
+      <section id="skills" className="snap-start">
+        <Skills />
       </section>
 
       {/* Skills */}
