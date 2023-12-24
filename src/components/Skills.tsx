@@ -16,11 +16,11 @@ function Skills({}: Props) {
         Skills
       </h3>
 
-      <h3 className="top-40 absolute uppercase tracking-[3px] text-gray-500 text-sm">
+      <h3 className="top-36 xl:top-40 absolute uppercase tracking-[3px] text-gray-500 text-sm">
         Try hovering over a skill!
       </h3>
 
-      <div className="grid grid-cols-4 gap-7 mx-9 mt-20">
+      <div className="grid grid-cols-4 gap-7 mx-9 mt-32">
         <Skill imageLink="https://cdn.discordapp.com/attachments/1165641776011427900/1175595622288605214/nextjs-boilerplate-logo.png?ex=656bcdbd&is=655958bd&hm=d51583f70987f56984b445dd2e908dea87f64e77df5b44347b7464b5f7d0de04&" percentage="75%"/>
         <Skill imageLink="https://cdn.discordapp.com/attachments/1165641776011427900/1175592286130819112/react_original_wordmark_logo_icon_146375.png?ex=656bcaa2&is=655955a2&hm=a6c5862e11363c86e21747439f006b1118aacf78900a3d9f5144e065ad1ad414&" percentage="80%"/>
         <Skill imageLink="https://cdn.discordapp.com/attachments/1165641776011427900/1175592518931468329/nodejs-logo-FBE122E377-seeklogo.png?ex=656bcad9&is=655955d9&hm=13e590a18157a741aa4e708b3f410a095bd68f69f9cde0b2c27e62a4edd1d8aa&" percentage="80%"/>

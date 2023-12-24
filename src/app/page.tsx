@@ -40,12 +40,15 @@ export default function Home() {
         <Education />
       </section>
 
-      {/* Awards */}
+      {/* Skills */}
       <section id="skills" className="snap-start">
         <Skills />
       </section>
 
-      {/* Skills */}
+      {/* Awards */}
+      <section id="awards" className="snap-start">
+        <Awards />
+      </section>
 
       {/* Projects */}
 

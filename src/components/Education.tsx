@@ -10,7 +10,7 @@ function Education({}: Props) {
         Education
       </h3>
 
-      <div className="w-full px-10 pt-24 md:pt-28 xl:pt-16 flex space-x-8 overflow-x-scroll snap-x snap-mandatory">
+      <div className="w-full px-10 pt-24 mt-16 md:pt-28 xl:pt-16 flex space-x-8 overflow-x-scroll snap-x snap-mandatory">
         <EducationCard
           imageLink="https://cdn.discordapp.com/attachments/1165641776011427900/1168210526233444362/UniversityofNottinghamUoN-logo.png?ex=6550efd5&is=653e7ad5&hm=50b9c8fe518f494c806c2e9eba507b84d736cb5906c83fd5045a5d324daac773&"
           headerName="BSc (Hons) Computer Science in AI"
