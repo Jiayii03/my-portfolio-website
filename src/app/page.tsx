@@ -5,6 +5,7 @@ import Awards from "@/components/Awards";
 import Education from "@/components/Education";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Image from "next/image";
 import { useEffect } from "react";
@@ -51,6 +52,9 @@ export default function Home() {
       </section>
 
       {/* Projects */}
+      <section id="projects" className="snap-start">
+        <Projects />
+      </section>
 
       {/* Contact me */}
     </div>
