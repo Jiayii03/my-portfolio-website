@@ -64,14 +64,17 @@ For scroll snapping to work, *scroll snap alignment* on the children has to be s
 - https://www.framer.com/motion/
 - https://www.npmjs.com/package/react-simple-typewriter
 - https://tailwindcomponents.com/gradient-generator/
+- https://heroicons.com/
+- https://react-hook-form.com/
 
 ## Additional dependencies
 
-- npm install react-social-icons
-- npm install @mui/material @mui/icons-material @emotion/react @emotion/styled 
-- npm install @reduxjs/toolkit react-redux
-- npm install next-themes
+- npm i react-social-icons
+- npm i @mui/material @mui/icons-material @emotion/react @emotion/styled 
+- npm i @reduxjs/toolkit react-redux
+- npm i next-themes
 - npm i @heroicons/react
-- npm install framer-motion
+- npm i framer-motion
 - npm i react-simple-typewriter
+- npm i react-hook-form
 

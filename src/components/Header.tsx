@@ -4,6 +4,7 @@ import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -102,20 +103,22 @@ export default function Header({}: Props) {
           )}
         </button>
         {/* RIGHT SIDE OF HEADER */}
-        <div className="flex flex-row items-center text-gray-300 cursor-pointer">
-          {/* Theme toggle button here */}
+        <Link href="#contact">
+          <div className="flex flex-row items-center text-gray-300 cursor-pointer hover:animate-wiggle">
+            {/* Theme toggle button here */}
 
-          <SocialIcon
-            className="cursor-pointer"
-            network="email"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-          {/* everything written on tailwind is mobile-first, by default, it's hidden on mobile */}
-          <p className="uppercase hidden md:inline-flex text-gray-400">
-            Contact me
-          </p>
-        </div>
+            <SocialIcon
+              className="cursor-pointer"
+              network="email"
+              fgColor="gray"
+              bgColor="transparent"
+            />
+            {/* everything written on tailwind is mobile-first, by default, it's hidden on mobile */}
+            <p className="uppercase hidden md:inline-flex text-gray-400">
+              Contact me
+            </p>
+          </div>
+        </Link>
       </motion.div>
     </header>
   );
