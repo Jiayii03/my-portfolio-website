@@ -22,7 +22,7 @@ function Hero({}: Props) {
       {/* Background circle */}
       <BackgroundCircles />
       <img
-        src="https://cdn.discordapp.com/attachments/1165641776011427900/1166803413179318292/53263952300_de7409b42b_o.jpg?ex=654bd15b&is=65395c5b&hm=c730b5b4b4beee78f05d2ca9f575ae6c1079e27777e0b427060523672cac400e&"
+        src="https://i.imgur.com/Q8r9eb0.jpeg"
         alt=""
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
       />

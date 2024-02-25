@@ -13,13 +13,13 @@ function Awards() {
           title="FOSE Dean's Excellence Scholarship Award 2023"
           issuedBy="The University of Nottingham"
           description="Awarded the Dean’s Excellence Scholarship (DES), which is only eligible to top achieving students within the top 2% of the school population."
-          imageLink="https://cdn.discordapp.com/attachments/1165641776011427900/1188453921866383441/ARSM_diploma_certificate-1.png?ex=659a94f7&is=65881ff7&hm=109faf04d150ddd36f928faa38b5d42bd01b38ca38abeb1de5d8e96b9f538d0b&"
+          imageLink="https://i.imgur.com/pg7lhmA.png"
         />
         <AwardCard
           title="1st Prize: Web Design Competition"
           issuedBy="Taylor's University School of Computer Science"
-          description= "Worked in a team, successfully designed a conceptual website for an online bakery store. Used HTML, CSS, JavaScript, Bootstrap and PHP."
-          imageLink="https://cdn.discordapp.com/attachments/1165641776011427900/1188450095105060915/1674618430714.png?ex=659a9167&is=65881c67&hm=9eab2b86962a9022d6566c8257c0bb446c1e60276fc26963f87fdb8785cab3b8&"
+          description="Worked in a team, successfully designed a conceptual website for an online bakery store. Used HTML, CSS, JavaScript, Bootstrap and PHP."
+          imageLink="https://i.imgur.com/t2SqZje.png"
         />
         <AwardCard
           title="

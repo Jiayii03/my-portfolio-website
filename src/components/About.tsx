@@ -11,7 +11,7 @@ function About({}: Props) {
       </h3>
 
       <motion.img
-        src="https://cdn.discordapp.com/attachments/1165641776011427900/1166802470807285760/0352002.jpg?ex=654bd07b&is=65395b7b&hm=d835b1905ef1684cd1364c99d65282ace431fa97823d4f44a0843b636609164d&"
+        src="https://i.imgur.com/m6eidIi.jpeg"
         initial={{
           x: -200,
           opacity: 0,
